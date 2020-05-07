@@ -12,7 +12,7 @@ button1.addEventListener("click",function(){
                var limit=document.querySelector("#limit").value;
     score1++;
     p1s.textContent=score1;
-    if(score1==limit||(score1>score2 && score1>limit)
+    if(score1==limit||(score1>score2 && score1>limit))
        {
        p1s.classList.add("green");
         button1.setAttribute("disabled","true");
@@ -24,7 +24,7 @@ button2.addEventListener("click",function(){
                var limit=document.querySelector("#limit").value;
     score2++;
     p2s.textContent=score2;
-    if(score2==limit||(score2>score1 && score2>limit)
+    if(score2==limit||(score2>score1 && score2>limit))
        {
        p2s.classList.add("green");
         button1.setAttribute("disabled","true");
