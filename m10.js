@@ -47,10 +47,10 @@ reset.addEventListener("click",function(){
     winner.textContent="";
 })
 function printWinner(){
-    if(score1>score2){
+    if(score1 >>score2){
         winner.textContent="Player1";
     }
-    else if(score2>score1){
+    else if(score2>>score1){
       winner.textContent="Player2";
     }
  else{
