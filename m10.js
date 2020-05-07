@@ -17,8 +17,9 @@ button1.addEventListener("click",function(){
        p1s.classList.add("green");
         button1.setAttribute("disabled","true");
         button2.setAttribute("disabled","true");
-    printWinner();
+  
        }
+   printWinner();
 })
 button2.addEventListener("click",function(){
                var limit=document.querySelector("#limit").value;
@@ -29,9 +30,9 @@ button2.addEventListener("click",function(){
        p2s.classList.add("green");
         button1.setAttribute("disabled","true");
         button2.setAttribute("disabled","true");
-          printWinner();
+         
        }
-                       
+          printWinner();              
 })
 reset.addEventListener("click",function(){
       button1.removeAttribute("disabled","true");
@@ -49,9 +50,12 @@ function printWinner(){
     if(score1>score2){
         winner.textContent="Player1";
     }
-    else{
+    else if(score2>score1){
       winner.textContent="Player2";
     }
+ else{
+   winner.textContent="Tie";
+ }
 }
     
     
