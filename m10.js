@@ -29,8 +29,9 @@ button2.addEventListener("click",function(){
        p2s.classList.add("green");
         button1.setAttribute("disabled","true");
         button2.setAttribute("disabled","true");
+          printWinner();
        }
-                         printWinner();
+                       
 })
 reset.addEventListener("click",function(){
       button1.removeAttribute("disabled","true");
